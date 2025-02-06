@@ -1,0 +1,68 @@
+[
+  {
+    "id": "scrambled-eggs",
+    "info": {
+      "name": "Scrambled Eggs",
+      "review": {
+        "rating": 4.67,
+        "count": 396
+      },
+      "timing": {
+        "prep": "30 mins",
+        "cook": "15 mins",
+        "total": "45 mins"
+      },
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "Eggs",
+          "quantity": 3
+        },
+        {
+          "name": "Salt, to taste"
+        },
+        {
+          "name": "Olive Oil",
+          "quantity": 0.5,
+          "unit": "tablespoon"
+        }
+      ],
+      "instructions": [
+        "Crack the eggs into a medium bowl and add the milk or water. Whisk until smooth and combined, with no streaks of egg white remaining.",
+        "Brush a small nonstick skillet with olive oil, or melt a little butter in a small nonstick skillet. Bring to medium heat.",
+        "Pour in the eggs, and let them cook for a few seconds without stirring. Pull a rubber spatula across the bottom of the pan to form large, soft curds of scrambled eggs.",
+        "Continue cooking over medium-low heat, folding and stirring the eggs every few seconds. Scrape the spatula along the bottom and sides of the pan often to form more curds and to prevent any part of the eggs from drying out.",
+        "Remove the pan from the heat when the eggs are mostly set, but a little liquid egg remains. Season to taste with salt and pepper and garnish with chopped fresh chives, if desired."
+      ]
+    }
+  },
+  {
+    "id": "hard-boiled-eggs",
+    "info": {
+      "name": "Hard-Boiled Eggs",
+      "review": {
+        "rating": 4.02,
+        "count": 39612
+      },
+      "timing": {
+        "prep": "3 mins",
+        "cook": "12 mins",
+        "total": "15 mins"
+      },
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "Eggs",
+          "quantity": 6
+        },
+        {
+          "name": "Salt, to taste"
+        }
+      ],
+      "instructions": [
+        "Crack the eggs into a medium bowl and add the milk or water. Whisk until smooth and combined, with no streaks of egg white remaining.",
+        "Brush a small nonstick skillet with olive oil, or melt a little butter in a small nonstick skillet. Bring to medium heat."
+      ]
+    }
+  }
+]
