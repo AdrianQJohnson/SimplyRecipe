@@ -1,10 +1,9 @@
 import { Component, inject, Input } from '@angular/core';
-import { SavedRecipe } from './models/recipe';
-import { RecipeService } from '../../services/recipe/recipe.service';
+import { SavedRecipe } from '../models/recipe';
+import { RecipeService } from '@services/recipe/recipe.service';
 import { combineLatest, map } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-recipe-card',

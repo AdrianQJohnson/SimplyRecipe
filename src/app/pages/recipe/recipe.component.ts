@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RecipeCardComponent } from '../../shared/recipe-card/recipe-card.component';
+import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 import { ActivatedRoute } from '@angular/router';
 import { combineLatest, map, of } from 'rxjs';
 import { CommonModule } from '@angular/common';
