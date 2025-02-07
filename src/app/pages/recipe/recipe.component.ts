@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RecipeCardComponent } from '../../shared/recipe-card/recipe-card.component';
+import { ActivatedRoute } from '@angular/router';
+import { combineLatest, map, of } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-recipe',
-  imports: [RecipeCardComponent],
+  imports: [CommonModule, RecipeCardComponent],
   template: `
-    <div class="content d-flex justify-content-center pt-5">
-      <app-recipe-card></app-recipe-card>
-    </div>
+    @if(viewModel$ | async; as vm) {
+      @if(vm.recipeRoute) {
+        <div class="content d-flex justify-content-center my-5">
+          <app-recipe-card [route]="vm.recipeRoute"></app-recipe-card>
+        </div>
+      }
+    }
   `,
   styles: `
     .content {
@@ -16,4 +23,16 @@ import { RecipeCardComponent } from '../../shared/recipe-card/recipe-card.compon
     }
   `,
 })
-export class RecipeComponent {}
+export class RecipeComponent {
+  route = inject(ActivatedRoute);
+
+  viewModel$ = combineLatest({
+    params: this.route.params,
+  }).pipe(
+    map(({ params }) => {
+      return {
+        recipeRoute: params['route']
+      };
+    })
+  );
+}
