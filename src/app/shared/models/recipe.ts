@@ -1,6 +1,7 @@
 export interface SavedRecipe {
-  id: string,
-  info: Recipe
+  id: string;
+  info: Recipe;
+  metadata: RecipeMetadata;
 }
 
 export interface Recipe {
@@ -27,4 +28,10 @@ export interface Ingredient {
   name: string;
   quantity?: number;
   unit?: string;
+}
+
+export interface RecipeMetadata {
+  author: string;
+  createdDate: string;
+  tags: string[];
 }

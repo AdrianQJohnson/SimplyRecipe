@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject, mergeMap, of, tap } from 'rxjs';
-import { SavedRecipe } from '../../pages/recipe/models/recipe';
+import { SavedRecipe } from '../../shared/models/recipe';
 
 @Injectable({
   providedIn: 'root'

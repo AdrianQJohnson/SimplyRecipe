@@ -1,5 +1,5 @@
 import { Component, inject, Input } from '@angular/core';
-import { SavedRecipe } from '../models/recipe';
+import { SavedRecipe } from '../../../shared/models/recipe';
 import { RecipeService } from '@services/recipe/recipe.service';
 import { combineLatest, map } from 'rxjs';
 import { CommonModule } from '@angular/common';
@@ -9,7 +9,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   selector: 'app-recipe-card',
   imports: [CommonModule, ReactiveFormsModule],
   template: `
-    @if(viewModel$ | async; as vm) { @if(vm.recipe) {
+    @if (viewModel$ | async; as vm) { @if (vm.recipe) {
     <h1 class="d-flex justify-content-evenly">{{ vm.recipe.name }}</h1>
     <p class="d-flex justify-content-evenly">
       Rating: {{ vm.recipe.review.rating }} from

@@ -8,8 +8,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-recipe',
   imports: [CommonModule, RecipeCardComponent],
   template: `
-    @if(viewModel$ | async; as vm) {
-      @if(vm.recipeRoute) {
+    @if (viewModel$ | async; as vm) {
+      @if (vm.recipeRoute) {
         <div class="content d-flex justify-content-center my-5">
           <app-recipe-card [route]="vm.recipeRoute"></app-recipe-card>
         </div>
