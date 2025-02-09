@@ -34,6 +34,14 @@
         "Continue cooking over medium-low heat, folding and stirring the eggs every few seconds. Scrape the spatula along the bottom and sides of the pan often to form more curds and to prevent any part of the eggs from drying out.",
         "Remove the pan from the heat when the eggs are mostly set, but a little liquid egg remains. Season to taste with salt and pepper and garnish with chopped fresh chives, if desired."
       ]
+    },
+    "metadata": {
+      "author": "Johnny Appleseed",
+      "createdDate": "2025-01-01",
+      "tags": [
+        "breakfast",
+        "eggs"
+      ]
     }
   },
   {
@@ -62,6 +70,51 @@
       "instructions": [
         "Crack the eggs into a medium bowl and add the milk or water. Whisk until smooth and combined, with no streaks of egg white remaining.",
         "Brush a small nonstick skillet with olive oil, or melt a little butter in a small nonstick skillet. Bring to medium heat."
+      ]
+    },
+    "metadata": {
+      "author": "Johnny Appleseed Jr.",
+      "createdDate": "2025-02-01",
+      "tags": [
+        "breakfast",
+        "eggs"
+      ]
+    }
+  },
+  {
+    "id": "hard-boiled-fake-eggs",
+    "info": {
+      "name": "Hard-Boiled Fake Eggs",
+      "review": {
+        "rating": 4.02,
+        "count": 39612
+      },
+      "timing": {
+        "prep": "3 mins",
+        "cook": "12 mins",
+        "total": "15 mins"
+      },
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "Fake Eggs",
+          "quantity": 6
+        },
+        {
+          "name": "Salt, to taste"
+        }
+      ],
+      "instructions": [
+        "Crack the eggs into a medium bowl and add the milk or water. Whisk until smooth and combined, with no streaks of egg white remaining.",
+        "Brush a small nonstick skillet with olive oil, or melt a little butter in a small nonstick skillet. Bring to medium heat."
+      ]
+    },
+    "metadata": {
+      "author": "Johnny Appleseed Jr.",
+      "createdDate": "2025-03-01",
+      "tags": [
+        "breakfast",
+        "vegan"
       ]
     }
   }
