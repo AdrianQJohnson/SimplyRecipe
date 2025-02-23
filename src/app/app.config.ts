@@ -3,7 +3,29 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { NGX_EDITORJS_OPTIONS } from '@tmdjr/ngx-editor-js2';
+import { NgxEditorJs2ImageComponent } from '@tmdjr/ngx-editor-js2-image';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideHttpClient()]
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideRouter(routes),
+    provideHttpClient(),
+    provideAnimationsAsync(),
+    {
+      provide: NGX_EDITORJS_OPTIONS,
+      useValue: {
+        consumerSupportedBlocks: [
+          {
+            // Customize the block name.
+            name: 'Image',
+            component: NgxEditorJs2ImageComponent,
+            // Must match the component name.
+            componentInstanceName: 'NgxEditorJs2ImageComponent',
+          },
+        ],
+      },
+    },
+  ],
 };

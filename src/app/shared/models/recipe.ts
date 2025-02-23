@@ -6,6 +6,7 @@ export interface SavedRecipe {
 
 export interface Recipe {
   name: string;
+  image: string;
   review: Review;
   timing: Timing;
   servings: number;

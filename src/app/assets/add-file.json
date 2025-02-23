@@ -1,0 +1,58 @@
+[
+    {
+        "blockId": "tmdjr",
+        "sortIndex": 0,
+        "componentInstanceName": "HeaderBlockComponent",
+        "savedAction": "h1",
+        "dataClean": "Recipe Name"
+    },
+    {
+        "blockId": "3p6o2w",
+        "sortIndex": 1,
+        "componentInstanceName": "NgxEditorJs2ImageComponent",
+        "savedAction": "flex-start",
+        "dataClean": "{\"url\":\"https://live.staticflickr.com/4550/38147672634_2a99af5a71_c.jpg\",\"title\":\"Placeholder image\"}"
+    },
+    {
+        "blockId": "5dm4s9",
+        "sortIndex": 2,
+        "componentInstanceName": "ParagraphBlockComponent",
+        "savedAction": "medium",
+        "dataClean": "Prep Time: # mins | Cook Time: # mins | Total Time: # mins"
+    },
+    {
+        "blockId": "zgbpbm",
+        "sortIndex": 3,
+        "componentInstanceName": "ParagraphBlockComponent",
+        "savedAction": "medium",
+        "dataClean": "Servings: #"
+    },
+    {
+        "blockId": "i8mc0n",
+        "sortIndex": 4,
+        "componentInstanceName": "ParagraphBlockComponent",
+        "savedAction": "medium",
+        "dataClean": "Ingredients\n"
+    },
+    {
+        "blockId": "02owrc",
+        "sortIndex": 5,
+        "componentInstanceName": "ParagraphBlockComponent",
+        "savedAction": "medium",
+        "dataClean": "Have..."
+    },
+    {
+        "blockId": "w5ofg8",
+        "sortIndex": 6,
+        "componentInstanceName": "ParagraphBlockComponent",
+        "savedAction": "medium",
+        "dataClean": "Instructions\n"
+    },
+    {
+        "blockId": "tt58gp",
+        "sortIndex": 7,
+        "componentInstanceName": "ParagraphBlockComponent",
+        "savedAction": "medium",
+        "dataClean": " Do..."
+    }
+]

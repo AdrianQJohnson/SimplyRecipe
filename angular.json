@@ -28,7 +28,8 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              { "glob": "data.json", "input": "src/app/assets/", "output": "./assets/" }
+              { "glob": "data.json", "input": "src/app/assets/", "output": "./assets/" },
+              { "glob": "add-file.json", "input": "src/app/assets/", "output": "./assets/" }
             ],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",

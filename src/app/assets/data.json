@@ -3,6 +3,7 @@
     "id": "scrambled-eggs",
     "info": {
       "name": "Scrambled Eggs",
+      "image": "https://images.pexels.com/photos/15584737/pexels-photo-15584737/free-photo-of-delicious-scrambled-eggs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "review": {
         "rating": 4.67,
         "count": 396
@@ -48,6 +49,7 @@
     "id": "hard-boiled-eggs",
     "info": {
       "name": "Hard-Boiled Eggs",
+      "image": "https://live.staticflickr.com/3779/13739224413_3bbfed9e84_5k.jpg",
       "review": {
         "rating": 4.02,
         "count": 39612
@@ -82,9 +84,10 @@
     }
   },
   {
-    "id": "hard-boiled-fake-eggs",
+    "id": "vegan-hard-boiled-eggs",
     "info": {
-      "name": "Hard-Boiled Fake Eggs",
+      "name": "Vegan-Hard-Boiled Eggs",
+      "image": "https://avegtastefromatoz.com/wp-content/uploads/2022/03/Hard-Boiled-Vegan-eggs-1.jpg",
       "review": {
         "rating": 4.02,
         "count": 39612
@@ -97,7 +100,7 @@
       "servings": 4,
       "ingredients": [
         {
-          "name": "Fake Eggs",
+          "name": "Vegan Eggs",
           "quantity": 6
         },
         {
