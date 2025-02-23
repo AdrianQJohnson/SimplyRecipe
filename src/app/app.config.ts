@@ -6,9 +6,11 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { NGX_EDITORJS_OPTIONS } from '@tmdjr/ngx-editor-js2';
 import { NgxEditorJs2ImageComponent } from '@tmdjr/ngx-editor-js2-image';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideHttpClient(),
