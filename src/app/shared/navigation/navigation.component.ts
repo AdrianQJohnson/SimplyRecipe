@@ -79,38 +79,7 @@ import { CommonModule } from '@angular/common';
             }}</a>
             } @case ('divider') {
             <hr class="dropdown-divider" />
-            } @case ('dropdown') {
-            <ng-container
-              *ngTemplateOutlet="navSubDropdown; context: { dropdownItem }"
-            ></ng-container>
-            } }
-          </li>
-          }
-        </ul>
-      </div>
-    </ng-template>
-
-    <ng-template #navSubDropdown let-navItem="dropdownItem">
-      <div class="dropdown__menu dropdown__subMenu">
-        <a
-          class="dropdown-item dropdown-toggle"
-          [routerLink]="navItem.route"
-          id="navbarDropdown"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          {{ navItem.content }}
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          @for (dropdownItem of navItem.items; track dropdownItem) {
-          <li>
-            @switch (dropdownItem.type) { @case ('link') {
-            <a class="dropdown-item" [routerLink]="dropdownItem.route">{{
-              dropdownItem.content ?? ''
-            }}</a>
-            } @case ('divider') {
-            <hr class="dropdown-divider" />
-            } }
+            }}
           </li>
           }
         </ul>
@@ -148,58 +117,6 @@ export class NavigationComponent {
       type: 'link',
       content: 'Home',
       route: '',
-    },
-    {
-      type: 'dropdown',
-      content: 'Categories',
-      route: 'categories',
-      items: [
-        {
-          type: 'link',
-          content: 'Breakfast',
-          route: 'breakfast',
-        },
-        {
-          type: 'link',
-          content: 'Lunch',
-          route: 'lunch',
-        },
-        {
-          type: 'dropdown',
-          content: 'Dinner',
-          route: 'dinner',
-          items: [
-            {
-              type: 'link',
-              content: 'Poultry',
-              route: 'poultry',
-            },
-            {
-              type: 'link',
-              content: 'Beef',
-              route: 'beef',
-            },
-            {
-              type: 'link',
-              content: 'Seafood',
-              route: 'seafood',
-            },
-          ],
-        },
-        {
-          type: 'divider',
-        },
-        {
-          type: 'link',
-          content: 'Vegetarian',
-          route: 'vegetarian',
-        },
-        {
-          type: 'link',
-          content: 'Vegan',
-          route: 'vegan',
-        },
-      ],
-    },
+    }
   ];
 }

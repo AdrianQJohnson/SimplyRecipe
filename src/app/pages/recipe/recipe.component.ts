@@ -3,18 +3,20 @@ import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 import { ActivatedRoute } from '@angular/router';
 import { combineLatest, map, of } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { AddRecipeComponent } from '../add-recipe/add-recipe.component';
 
 @Component({
   selector: 'app-recipe',
-  imports: [CommonModule, RecipeCardComponent],
+  imports: [CommonModule, RecipeCardComponent, AddRecipeComponent],
   template: `
-    @if (viewModel$ | async; as vm) {
-      @if (vm.recipeRoute) {
-        <div class="content d-flex justify-content-center my-5">
-          <app-recipe-card [route]="vm.recipeRoute"></app-recipe-card>
-        </div>
-      }
-    }
+    <div class="content d-flex justify-content-center my-5">
+      @if (viewModel$ | async; as vm) { @if (vm.recipeRoute && vm.recipeRoute
+      === 'add-recipe') {
+      <app-add-recipe></app-add-recipe>
+      } @else {
+      <app-recipe-card [route]="vm.recipeRoute"></app-recipe-card>
+      } }
+    </div>
   `,
   styles: `
     .content {
@@ -31,7 +33,7 @@ export class RecipeComponent {
   }).pipe(
     map(({ params }) => {
       return {
-        recipeRoute: params['route']
+        recipeRoute: params['route'],
       };
     })
   );
